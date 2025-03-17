@@ -1,8 +1,13 @@
 package com.recap.ms1.service;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+@Service
+@AllArgsConstructor
 public class Icms implements CalculadoraImposto {
 
     private final BigDecimal aliquota = new BigDecimal("18");
